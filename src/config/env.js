@@ -10,15 +10,10 @@
 let baseUrl = '';
 let baseImgPath;
 
-//let loginUrl = 'http://m.zhihuoyueke.cn/#/';
 let loginUrl = 'http://jwtest.zhihuoyueke.cn/#/';
-// let loginUrl = 'http://main.xingxingzhihuo.com.cn/#/';
-// let loginUrl = 'http://101.95.137.86:8085';
 if (process.env.NODE_ENV == 'development') {
- //   baseUrl = 'http://yuekeapi.xingxingzhihuo.com.cn/weixin'
      baseUrl = 'http://test.xingxingzhihuo.com.cn/weixin'
 }else if(process.env.NODE_ENV == 'production') {
-   // baseUrl = 'http://yuekeapi.xingxingzhihuo.com.cn/weixin'
    baseUrl = 'http://test.xingxingzhihuo.com.cn/weixin'
 }
 export {
